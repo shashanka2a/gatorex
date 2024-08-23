@@ -7,7 +7,14 @@
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.0.3/dist/tailwind.min.css" rel="stylesheet">
     <style>
         .gradient-bg {
-            background: linear-gradient(135deg, #006633 0%, #55008B 100%);
+            background: linear-gradient(135deg, #00563b, #4b0082);
+        }
+        .feature-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+        }
+        .feature-icon {
+            filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.2));
         }
     </style>
 </head>
@@ -42,22 +49,22 @@
             <h2 class="text-3xl font-bold text-center text-gray-800">Why Choose GatorEx?</h2>
             <div class="flex flex-wrap mt-10 justify-around">
                 <div class="w-full md:w-1/3 p-4 text-center">
-                    <div class="bg-white rounded-lg shadow-lg p-6">
-                        <img src="community-icon.svg" alt="Community" class="w-16 mx-auto">
+                    <div class="bg-white rounded-lg shadow-lg p-6 feature-card transition-transform duration-300">
+                        <img src="community-icon.svg" alt="Community" class="w-16 mx-auto feature-icon">
                         <h3 class="text-2xl font-bold mt-4 text-gray-800">Community-Focused</h3>
                         <p class="mt-2 text-gray-600">Built exclusively for UF students, fostering a close-knit community.</p>
                     </div>
                 </div>
                 <div class="w-full md:w-1/3 p-4 text-center">
-                    <div class="bg-white rounded-lg shadow-lg p-6">
-                        <img src="secure-icon.svg" alt="Secure" class="w-16 mx-auto">
+                    <div class="bg-white rounded-lg shadow-lg p-6 feature-card transition-transform duration-300">
+                        <img src="secure-icon.svg" alt="Secure" class="w-16 mx-auto feature-icon">
                         <h3 class="text-2xl font-bold mt-4 text-gray-800">Trusted & Secure</h3>
                         <p class="mt-2 text-gray-600">University verification ensures a safe environment for everyone.</p>
                     </div>
                 </div>
                 <div class="w-full md:w-1/3 p-4 text-center">
-                    <div class="bg-white rounded-lg shadow-lg p-6">
-                        <img src="easy-icon.svg" alt="Easy" class="w-16 mx-auto">
+                    <div class="bg-white rounded-lg shadow-lg p-6 feature-card transition-transform duration-300">
+                        <img src="easy-icon.svg" alt="Easy" class="w-16 mx-auto feature-icon">
                         <h3 class="text-2xl font-bold mt-4 text-gray-800">Simple & Easy</h3>
                         <p class="mt-2 text-gray-600">A user-friendly platform that makes buying and selling a breeze.</p>
                     </div>
